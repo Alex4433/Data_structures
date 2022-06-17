@@ -16,10 +16,10 @@ class LinkedList:
         if self.next:
             self.next.show_all()
 
+
 l = LinkedList(4)
 l.append(6)
 l.append(5)
 l.append(3)
 l.append(1)
-
 l.show_all()
