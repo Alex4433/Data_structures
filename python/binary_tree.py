@@ -1,6 +1,3 @@
-import random
-
-
 class Node:
 
     def __init__(self, data, root=True):
@@ -41,8 +38,6 @@ class Node:
             self.right.list_of_all_elements(list=list)
 
         return list
-
-
 
     def check_having_element(self, el):
         if self.data != el:
