@@ -47,16 +47,15 @@ class Node:
         else:
             return True
 
-
-d = Node(random.randrange(100, 1000))
-list_of_number = []
-
-
-for _ in range(5_000):
-    a = random.randrange(-500, 1000)
-    d.append(a)
-    list_of_number.append(a)
-
-
-a = d.check_having_element(list_of_number[9])
-print(a)
+# d = Node(random.randrange(100, 1000))
+# list_of_number = []
+#
+#
+# for _ in range(5_000):
+#     a = random.randrange(-500, 1000)
+#     d.append(a)
+#     list_of_number.append(a)
+#
+#
+# a = d.check_having_element(list_of_number[9])
+# print(a)
