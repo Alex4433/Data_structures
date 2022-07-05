@@ -32,6 +32,18 @@ class Node:
         if self.right:
             self.right.print_all()
 
+    def list_of_all_elements(self, list=[]):
+        list.append(self.data)
+        if self.left:
+            self.left.list_of_all_elements(list=list)
+
+        if self.right:
+            self.right.list_of_all_elements(list=list)
+
+        return list
+
+
+
     def check_having_element(self, el):
         if self.data != el:
             if self.__sort_condition(el):
@@ -47,15 +59,5 @@ class Node:
         else:
             return True
 
-# d = Node(random.randrange(100, 1000))
-# list_of_number = []
-#
-#
-# for _ in range(5_000):
-#     a = random.randrange(-500, 1000)
-#     d.append(a)
-#     list_of_number.append(a)
-#
-#
-# a = d.check_having_element(list_of_number[9])
-# print(a)
+
+
